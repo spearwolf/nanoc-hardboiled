@@ -20,8 +20,10 @@ compile '/css/*/' do
 end
 
 compile '*' do
-  filter :erb
-  layout 'default'
+  if item[:extension] == "haml"
+    filter :haml
+    layout 'default'
+  end
 end
 
 route '/css/_*/' do
@@ -38,4 +40,4 @@ route '*' do
   item.identifier + 'index.html'
 end
 
-layout '*', :erb
+layout '*', :haml, :format => :html5

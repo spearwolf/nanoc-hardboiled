@@ -4,5 +4,6 @@
 project_path = File.join(File.dirname(__FILE__), '..')
 http_path    = '/'
 output_style = :compressed
-sass_dir     = 'content/style'
-css_dir      = 'output/style'
+sass_dir     = 'content/css'
+css_dir      = 'output/css'
+images_dir   = 'content/images'
