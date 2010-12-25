@@ -2,10 +2,15 @@
 %html
   %head
     %meta(charset="utf-8")
+    %meta(name="generator" content="nanoc 3.1.6")
     %title
       A Brand New nanoc Site - #{@item[:title]}
     %link(rel="stylesheet" type="text/css" href="/css/screen.css" media="screen")
-    %meta(name="generator" content="nanoc 3.1.6")
+    %script(src="/js/jquery-1_4_4_min.js")
+    %script(src="/js/modernizr-1_6_min.js")
+    /[if lt IE 9]
+      %script(src="/js/DOMAssistantCompressed-2_8.js")
+      %script(src="/js/selectivizr.js")
 
   %body
     #main
@@ -34,6 +39,3 @@
         %li
           %a(href="http://projects.stoneship.org/trac/nanoc/")
             Wiki
-    
-    %script(src="/js/jquery-1_4_4_min.js")
-    %script(src="/js/modernizr-1_6_min.js")
