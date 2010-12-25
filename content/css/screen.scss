@@ -1,6 +1,7 @@
+
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0 0;
+  padding: 0 0;
 
   font-family: Georgia, Palatino, Times, 'Times New Roman', sans-serif;
 }
@@ -72,18 +73,18 @@ a:hover {
   border-right: 1px solid #ccc;
 
   text-align: right;
-}
 
-#sidebar h2 {
-  text-transform: uppercase;
+  h2 {
+    text-transform: uppercase;
 
-  font-size: 13px;
+    font-size: 13px;
 
-  color: #333;
+    color: #333;
 
-  letter-spacing: 1px;
+    letter-spacing: 1px;
 
-  line-height: 20px;
+    line-height: 20px;
+  }
 }
 
 #sidebar ul {
