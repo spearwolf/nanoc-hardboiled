@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-
 require 'compass'
 
 Compass.add_project_configuration('config/compass.rb')
@@ -32,7 +31,6 @@ end
 
 route '/css/_*' do
   # don't output partials, so return nil
-  nil
 end
 
 route '/css/*' do
@@ -41,7 +39,7 @@ route '/css/*' do
 end
 
 route '/js/*' do
-  item.identifier.chop + '.js'
+  item.identifier.chop + '.' + item[:extension]
 end
 
 route '*' do
